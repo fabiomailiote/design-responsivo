@@ -14,9 +14,10 @@
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
-    <header id="cabecalho">
+    <!-- CABEÇALHO COM LOGO E MENU -->
+    <header id="cabecalho" class="container">
         <a href="index.html"><h1 id="logo">NodeProp - Especializada em Soluções Digitais</h1></a>
-        <button id="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
+        <button id="btn-menu" class="bg-gradient"><i class="fas fa-bars fa-lg"></i></button>
         <nav id="menu">
             <a class="btn-close"><i class="fas fa-times fa-lg"></i></a>
             <ul>
@@ -28,19 +29,75 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> <!-- FIM DO CABEÇALHO -->
 
-    <div id="banner">
+    <!-- BANNER PUBLICITÁRIO -->
+    <div id="banner" class="container">
         <div id="title">
             <h2>OUSE INOVAR!</h2>
             <h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores.</h3>
         </div>
         <div id="buttons">
-            <button class="btn-cadastrar">Cadastrar <i class="fas fa-arrow-circle-right"></i></button>
-            <button class="btn-sobre">Sobre <i class="fas fa-question-circle"></i></button>
+            <button class="btn btn-cadastrar bg-white">Cadastrar <i class="fas fa-arrow-circle-right"></i></button>
+            <button class="btn btn-sobre bg-black">Sobre <i class="fas fa-question-circle"></i></button>
         </div>
-    </div>
+    </div> <!-- FIM DO BANNER PUBLICITÁRIO -->
 
+    <!-- SEÇÃO DE SERVIÇOS -->
+    <main id="servicos" class="container">
+        <article class="servico bg-white">
+            <a href="#"><img src="img/criacoes.jpg" alt="Campanhas publicitárias"></a>
+            <div class="inner">
+                <a href="#">Campanhas Publicitárias</a>
+                <h4>Impressos, VT's e Jingles</h4>
+                <p>Se você está precisando criar algum material em específico, conte com a nossa equipe de profissionais. Eles farão toda a campanha publicitária: VT, outdoor, anúncio e muito mais pela sua empresa no mais alto padrão de qualidade.</p>
+            </div>
+        </article>
+
+        <article class="servico bg-white">
+            <a href="#"><img src="img/md.jpg" alt="Marketing digital"></a>
+            <div class="inner">
+                <a href="#">Marketing Digital</a>
+                <h4>Administração de Redes Sociais</h4>
+                <p>Como agência de publicidade aplicamos estratégias nos meios digitais para que o seu negócio seja visto por milhões de usuários. O Brasil é o 5º país mais conectado do mundo. Por este motivo, o seu negócio não pode ficar de fora do mercado digital.</p>
+            </div>
+        </article>
+
+        <article class="servico bg-white">
+            <a href="#"><img src="img/cs.jpg" alt="Criação de sites"></a>
+            <div class="inner">
+                <a href="#">Criação de Sites</a>
+                <h4>Sites Administráveis</h4>
+                <p>Agora você pode administrar seu site quando e como quiser. E o melhor sobre este serviço é que o mantém sempre atualizado, com seus produtos mais recentes e integração com redes sociais. Agora é possível.</p>
+            </div>
+        </article>
+    </main> <!-- FIM DA SEÇÃO DE SERVIÇOS -->
+
+    <!-- SEÇÃO DE NEWSLETTER -->
+    <section id="newsletter" class="container bg-black">
+        <h2>Inscreva-se agora!</h2>
+        <h3>Receba novidades, dicas e muito mais.</h3>
+        
+        <!-- FORMULÁRIO DA NEWSLETTER -->
+        <form action="#">
+            <input type="email" name="email" placeholder="Seu e-mail">
+            <button class="bg-white">Cadastrar</button>
+        </form> <!-- FIM DO FORMULÁRIO DA NEWSLETTER -->
+    </section> <!-- FIM DA SEÇÃO DE NEWSLETTER -->
+
+    <!-- RODAPÉ -->
+    <footer id="rodape" class="container bg-gradient">
+        <div id="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p id="copyright">Copyright &copy; NodeProp 2022. Todos os direitos reservados.</p>
+    </footer> <!-- FIM DO RODAPÉ -->
+
+    <!-- JQuery para interatividade do menu -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script>
         $("#btn-menu").click(function(){
